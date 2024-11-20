@@ -16,6 +16,13 @@
 		FB18D37A2CE26BDE00CAF627 /* ProyectoFinal_iOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB18D3792CE26BDE00CAF627 /* ProyectoFinal_iOSTests.swift */; };
 		FB18D3842CE26BDE00CAF627 /* ProyectoFinal_iOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB18D3832CE26BDE00CAF627 /* ProyectoFinal_iOSUITests.swift */; };
 		FB18D3862CE26BDE00CAF627 /* ProyectoFinal_iOSUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB18D3852CE26BDE00CAF627 /* ProyectoFinal_iOSUITestsLaunchTests.swift */; };
+		FB303B6E2CEE43C600281779 /* ControladorPantallaDeColeccion.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB303B642CEE43C600281779 /* ControladorPantallaDeColeccion.swift */; };
+		FB303B6F2CEE43C600281779 /* ControladorPantallaPrincipalDeColeccion.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB303B652CEE43C600281779 /* ControladorPantallaPrincipalDeColeccion.swift */; };
+		FB303B702CEE43C600281779 /* vista_de_celda.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB303B662CEE43C600281779 /* vista_de_celda.swift */; };
+		FB303B712CEE43C600281779 /* ControladorDePantallaDeMonstruos.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB303B682CEE43C600281779 /* ControladorDePantallaDeMonstruos.swift */; };
+		FB303B722CEE43C600281779 /* Monstruos.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB303B6A2CEE43C600281779 /* Monstruos.swift */; };
+		FB303B732CEE43C600281779 /* ProveedorMonstruos.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB303B6C2CEE43C600281779 /* ProveedorMonstruos.swift */; };
+		FB303B762CEE49B700281779 /* mod_navegador_principal.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB303B752CEE49B700281779 /* mod_navegador_principal.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +56,13 @@
 		FB18D37F2CE26BDE00CAF627 /* ProyectoFinal_iOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ProyectoFinal_iOSUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB18D3832CE26BDE00CAF627 /* ProyectoFinal_iOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProyectoFinal_iOSUITests.swift; sourceTree = "<group>"; };
 		FB18D3852CE26BDE00CAF627 /* ProyectoFinal_iOSUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProyectoFinal_iOSUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		FB303B642CEE43C600281779 /* ControladorPantallaDeColeccion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ControladorPantallaDeColeccion.swift; sourceTree = "<group>"; };
+		FB303B652CEE43C600281779 /* ControladorPantallaPrincipalDeColeccion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ControladorPantallaPrincipalDeColeccion.swift; sourceTree = "<group>"; };
+		FB303B662CEE43C600281779 /* vista_de_celda.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = vista_de_celda.swift; sourceTree = "<group>"; };
+		FB303B682CEE43C600281779 /* ControladorDePantallaDeMonstruos.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ControladorDePantallaDeMonstruos.swift; sourceTree = "<group>"; };
+		FB303B6A2CEE43C600281779 /* Monstruos.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Monstruos.swift; sourceTree = "<group>"; };
+		FB303B6C2CEE43C600281779 /* ProveedorMonstruos.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProveedorMonstruos.swift; sourceTree = "<group>"; };
+		FB303B752CEE49B700281779 /* mod_navegador_principal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mod_navegador_principal.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +113,9 @@
 		FB18D3612CE26BDD00CAF627 /* ProyectoFinal_iOS */ = {
 			isa = PBXGroup;
 			children = (
+				FB303B692CEE43C600281779 /* ControladoresDePantalla */,
+				FB303B6B2CEE43C600281779 /* Modelos */,
+				FB303B6D2CEE43C600281779 /* Proveedor */,
 				FB18D3622CE26BDD00CAF627 /* AppDelegate.swift */,
 				FB18D3642CE26BDD00CAF627 /* SceneDelegate.swift */,
 				FB18D3662CE26BDD00CAF627 /* ViewController.swift */,
@@ -125,6 +142,50 @@
 				FB18D3852CE26BDE00CAF627 /* ProyectoFinal_iOSUITestsLaunchTests.swift */,
 			);
 			path = ProyectoFinal_iOSUITests;
+			sourceTree = "<group>";
+		};
+		FB303B672CEE43C600281779 /* VidaDeCeldas */ = {
+			isa = PBXGroup;
+			children = (
+				FB303B642CEE43C600281779 /* ControladorPantallaDeColeccion.swift */,
+				FB303B652CEE43C600281779 /* ControladorPantallaPrincipalDeColeccion.swift */,
+				FB303B662CEE43C600281779 /* vista_de_celda.swift */,
+			);
+			path = VidaDeCeldas;
+			sourceTree = "<group>";
+		};
+		FB303B692CEE43C600281779 /* ControladoresDePantalla */ = {
+			isa = PBXGroup;
+			children = (
+				FB303B742CEE49A500281779 /* estilos */,
+				FB303B672CEE43C600281779 /* VidaDeCeldas */,
+				FB303B682CEE43C600281779 /* ControladorDePantallaDeMonstruos.swift */,
+			);
+			path = ControladoresDePantalla;
+			sourceTree = "<group>";
+		};
+		FB303B6B2CEE43C600281779 /* Modelos */ = {
+			isa = PBXGroup;
+			children = (
+				FB303B6A2CEE43C600281779 /* Monstruos.swift */,
+			);
+			path = Modelos;
+			sourceTree = "<group>";
+		};
+		FB303B6D2CEE43C600281779 /* Proveedor */ = {
+			isa = PBXGroup;
+			children = (
+				FB303B6C2CEE43C600281779 /* ProveedorMonstruos.swift */,
+			);
+			path = Proveedor;
+			sourceTree = "<group>";
+		};
+		FB303B742CEE49A500281779 /* estilos */ = {
+			isa = PBXGroup;
+			children = (
+				FB303B752CEE49B700281779 /* mod_navegador_principal.swift */,
+			);
+			path = estilos;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,9 +319,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FB303B732CEE43C600281779 /* ProveedorMonstruos.swift in Sources */,
 				FB18D3672CE26BDD00CAF627 /* ViewController.swift in Sources */,
 				FB18D3632CE26BDD00CAF627 /* AppDelegate.swift in Sources */,
 				FB18D3652CE26BDD00CAF627 /* SceneDelegate.swift in Sources */,
+				FB303B6F2CEE43C600281779 /* ControladorPantallaPrincipalDeColeccion.swift in Sources */,
+				FB303B762CEE49B700281779 /* mod_navegador_principal.swift in Sources */,
+				FB303B722CEE43C600281779 /* Monstruos.swift in Sources */,
+				FB303B712CEE43C600281779 /* ControladorDePantallaDeMonstruos.swift in Sources */,
+				FB303B702CEE43C600281779 /* vista_de_celda.swift in Sources */,
+				FB303B6E2CEE43C600281779 /* ControladorPantallaDeColeccion.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

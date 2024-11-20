@@ -5,4 +5,12 @@
 //  Created by alumno on 11/11/24.
 //
 
-import Foundation
+import UIKit
+
+class VistaDeZelda: UICollectionViewCell{
+    
+    @IBOutlet weak var nombre: UILabel!
+    @IBOutlet weak var tipo: UILabel!
+    @IBOutlet weak var especie: UILabel!
+    @IBOutlet weak var descripcion: UILabel!
+}

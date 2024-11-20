@@ -5,4 +5,10 @@
 //  Created by alumno on 11/11/24.
 //
 
-import Foundation
+struct Monstruo: Codable{
+    var id: Int
+    var name: String
+    var type: String
+    var species: String
+    var description: String
+}
