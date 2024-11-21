@@ -39,6 +39,10 @@ class ControladorPantallaPrincipalDeColeccion: UICollectionViewController{
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let celda: VistaDeZelda = collectionView.dequeueReusableCell(withReuseIdentifier: identificador_de_celda, for: indexPath) as! VistaDeZelda
         
+        celda.nombre.text = self.lista_de_monstruos[indexPath.item].name
+        celda.tipo.text = self.lista_de_monstruos[indexPath.item].type
+        celda.especie.text = self.lista_de_monstruos[indexPath.item].species
+        celda.descripcion.text = self.lista_de_monstruos[indexPath.item].description
         
         
         return celda

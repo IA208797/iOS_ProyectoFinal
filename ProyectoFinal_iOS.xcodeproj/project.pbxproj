@@ -16,13 +16,13 @@
 		FB18D37A2CE26BDE00CAF627 /* ProyectoFinal_iOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB18D3792CE26BDE00CAF627 /* ProyectoFinal_iOSTests.swift */; };
 		FB18D3842CE26BDE00CAF627 /* ProyectoFinal_iOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB18D3832CE26BDE00CAF627 /* ProyectoFinal_iOSUITests.swift */; };
 		FB18D3862CE26BDE00CAF627 /* ProyectoFinal_iOSUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB18D3852CE26BDE00CAF627 /* ProyectoFinal_iOSUITestsLaunchTests.swift */; };
-		FB303B6E2CEE43C600281779 /* ControladorPantallaDeColeccion.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB303B642CEE43C600281779 /* ControladorPantallaDeColeccion.swift */; };
 		FB303B6F2CEE43C600281779 /* ControladorPantallaPrincipalDeColeccion.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB303B652CEE43C600281779 /* ControladorPantallaPrincipalDeColeccion.swift */; };
 		FB303B702CEE43C600281779 /* vista_de_celda.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB303B662CEE43C600281779 /* vista_de_celda.swift */; };
 		FB303B712CEE43C600281779 /* ControladorDePantallaDeMonstruos.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB303B682CEE43C600281779 /* ControladorDePantallaDeMonstruos.swift */; };
 		FB303B722CEE43C600281779 /* Monstruos.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB303B6A2CEE43C600281779 /* Monstruos.swift */; };
 		FB303B732CEE43C600281779 /* ProveedorMonstruos.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB303B6C2CEE43C600281779 /* ProveedorMonstruos.swift */; };
 		FB303B762CEE49B700281779 /* mod_navegador_principal.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB303B752CEE49B700281779 /* mod_navegador_principal.swift */; };
+		FB6387FE2CEFA1EA0035A88B /* EstiloCellViewControllerCelular.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB6387FD2CEFA1EA0035A88B /* EstiloCellViewControllerCelular.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,13 +56,13 @@
 		FB18D37F2CE26BDE00CAF627 /* ProyectoFinal_iOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ProyectoFinal_iOSUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB18D3832CE26BDE00CAF627 /* ProyectoFinal_iOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProyectoFinal_iOSUITests.swift; sourceTree = "<group>"; };
 		FB18D3852CE26BDE00CAF627 /* ProyectoFinal_iOSUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProyectoFinal_iOSUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		FB303B642CEE43C600281779 /* ControladorPantallaDeColeccion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ControladorPantallaDeColeccion.swift; sourceTree = "<group>"; };
 		FB303B652CEE43C600281779 /* ControladorPantallaPrincipalDeColeccion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ControladorPantallaPrincipalDeColeccion.swift; sourceTree = "<group>"; };
 		FB303B662CEE43C600281779 /* vista_de_celda.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = vista_de_celda.swift; sourceTree = "<group>"; };
 		FB303B682CEE43C600281779 /* ControladorDePantallaDeMonstruos.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ControladorDePantallaDeMonstruos.swift; sourceTree = "<group>"; };
 		FB303B6A2CEE43C600281779 /* Monstruos.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Monstruos.swift; sourceTree = "<group>"; };
 		FB303B6C2CEE43C600281779 /* ProveedorMonstruos.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProveedorMonstruos.swift; sourceTree = "<group>"; };
 		FB303B752CEE49B700281779 /* mod_navegador_principal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mod_navegador_principal.swift; sourceTree = "<group>"; };
+		FB6387FD2CEFA1EA0035A88B /* EstiloCellViewControllerCelular.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EstiloCellViewControllerCelular.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -147,7 +147,6 @@
 		FB303B672CEE43C600281779 /* VidaDeCeldas */ = {
 			isa = PBXGroup;
 			children = (
-				FB303B642CEE43C600281779 /* ControladorPantallaDeColeccion.swift */,
 				FB303B652CEE43C600281779 /* ControladorPantallaPrincipalDeColeccion.swift */,
 				FB303B662CEE43C600281779 /* vista_de_celda.swift */,
 			);
@@ -184,6 +183,7 @@
 			isa = PBXGroup;
 			children = (
 				FB303B752CEE49B700281779 /* mod_navegador_principal.swift */,
+				FB6387FD2CEFA1EA0035A88B /* EstiloCellViewControllerCelular.swift */,
 			);
 			path = estilos;
 			sourceTree = "<group>";
@@ -328,7 +328,7 @@
 				FB303B722CEE43C600281779 /* Monstruos.swift in Sources */,
 				FB303B712CEE43C600281779 /* ControladorDePantallaDeMonstruos.swift in Sources */,
 				FB303B702CEE43C600281779 /* vista_de_celda.swift in Sources */,
-				FB303B6E2CEE43C600281779 /* ControladorPantallaDeColeccion.swift in Sources */,
+				FB6387FE2CEFA1EA0035A88B /* EstiloCellViewControllerCelular.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

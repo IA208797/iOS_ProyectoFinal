@@ -39,42 +39,53 @@
                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                         </collectionViewFlowLayout>
                         <cells>
-                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="XUC-qM-qEF">
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="celda_pantalla_principal" id="XUC-qM-qEF" customClass="VistaDeZelda" customModule="ProyectoFinal_iOS" customModuleProvider="target">
                                 <rect key="frame" x="43" y="0.0" width="307" height="167"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="hhB-pe-9sX">
                                     <rect key="frame" x="0.0" y="0.0" width="307" height="167"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Nombre" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xfd-J4-HE7">
-                                            <rect key="frame" x="8" y="8" width="62" height="21"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                            <color key="textColor" systemColor="groupTableViewBackgroundColor"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Tipo" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DwK-NM-4NK">
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tipo" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DwK-NM-4NK">
                                             <rect key="frame" x="8" y="37" width="34" height="21"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <color key="textColor" systemColor="groupTableViewBackgroundColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Especie" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wa7-Rx-DDX">
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Especie" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wa7-Rx-DDX">
                                             <rect key="frame" x="8" y="73" width="60" height="21"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <color key="textColor" systemColor="groupTableViewBackgroundColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Descripcion" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v0X-rj-BUA">
-                                            <rect key="frame" x="8" y="102" width="91" height="21"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Descripcion" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v0X-rj-BUA">
+                                            <rect key="frame" x="8" y="102" width="90.666666666666671" height="21"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <nil key="highlightedColor"/>
                                         </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nombre" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xfd-J4-HE7">
+                                            <rect key="frame" x="8" y="8" width="62" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" systemColor="groupTableViewBackgroundColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
                                     </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="wa7-Rx-DDX" secondAttribute="trailing" constant="20" symbolic="YES" id="5lf-90-wKU"/>
+                                        <constraint firstItem="v0X-rj-BUA" firstAttribute="top" secondItem="wa7-Rx-DDX" secondAttribute="bottom" constant="8" id="BPF-T9-CGh"/>
+                                        <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="xfd-J4-HE7" secondAttribute="trailing" constant="20" symbolic="YES" id="Lcv-Xf-1Fp"/>
+                                        <constraint firstItem="xfd-J4-HE7" firstAttribute="leading" secondItem="v0X-rj-BUA" secondAttribute="leading" id="Rgr-OI-Yeu"/>
+                                        <constraint firstItem="xfd-J4-HE7" firstAttribute="leading" secondItem="wa7-Rx-DDX" secondAttribute="leading" id="Uin-6C-tOM"/>
+                                        <constraint firstItem="wa7-Rx-DDX" firstAttribute="centerY" secondItem="hhB-pe-9sX" secondAttribute="centerY" id="VBw-SE-nBo"/>
+                                        <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="DwK-NM-4NK" secondAttribute="trailing" constant="20" symbolic="YES" id="VIv-Ob-gvn"/>
+                                        <constraint firstItem="xfd-J4-HE7" firstAttribute="leading" secondItem="DwK-NM-4NK" secondAttribute="leading" id="h86-Ba-LFQ"/>
+                                        <constraint firstItem="v0X-rj-BUA" firstAttribute="leading" secondItem="hhB-pe-9sX" secondAttribute="leading" constant="8" id="ovH-92-zdr"/>
+                                        <constraint firstItem="xfd-J4-HE7" firstAttribute="top" secondItem="hhB-pe-9sX" secondAttribute="topMargin" id="pFZ-Yv-dfs"/>
+                                        <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="v0X-rj-BUA" secondAttribute="trailing" constant="20" symbolic="YES" id="rQC-td-Oks"/>
+                                        <constraint firstItem="xfd-J4-HE7" firstAttribute="leading" secondItem="hhB-pe-9sX" secondAttribute="leadingMargin" id="rnH-kB-rcG"/>
+                                        <constraint firstItem="DwK-NM-4NK" firstAttribute="top" secondItem="xfd-J4-HE7" secondAttribute="bottom" constant="8" id="xCh-CF-4Gg"/>
+                                    </constraints>
                                 </collectionViewCellContentView>
                                 <size key="customSize" width="307" height="167"/>
                                 <connections>
