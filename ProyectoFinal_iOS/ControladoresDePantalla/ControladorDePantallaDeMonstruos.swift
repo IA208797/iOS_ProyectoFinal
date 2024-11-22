@@ -8,8 +8,6 @@
 import UIKit
 
 class ControladorPantallaDelMonstruo: UIViewController{
-    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int){
-    }
     
     let proveedor_monstruos = ProveedorDeMonstruos.autoreferencia
     
@@ -21,6 +19,8 @@ class ControladorPantallaDelMonstruo: UIViewController{
     public var id_monstruo: Int?
     
     private var monstruo: Monstruo?
+    
+    private var monstruo_descripcion: String?
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -40,6 +40,14 @@ class ControladorPantallaDelMonstruo: UIViewController{
                 }
             })
         }
+        else if self.monstruo == nil {
+            proveedor_monstruos.obtener_monstruo(id: id_monstruo ?? -1) { [weak self] monstruo in
+                self?.monstruo = monstruo
+                DispatchQueue.main.async {
+                    self?.actualizar_interfaz()
+                }
+            }
+        }
     }
     
     func dibujar_monstruo(){
@@ -49,10 +57,27 @@ class ControladorPantallaDelMonstruo: UIViewController{
         nombre.text = monstruo_actual.name
         tipo.text = monstruo_actual.type
         especie.text = monstruo_actual.species
-        descripcion.text = monstruo_actual.description
+       // descripcion.text = monstruo_actual.description
         
     }
-    
-    
 
+    
+    func dibujar_descripcion(){
+        guard let descripcion_actual = self.monstruo else {
+            return
+        }
+        descripcion.text = descripcion_actual.description
+    }
+
+
+    func actualizar_interfaz() {
+        guard let monstruo = self.monstruo else { return }
+        
+        // Mostrar la información del monstruo en la interfaz
+        nombre.text = monstruo.name
+        tipo.text = monstruo.type
+        especie.text = monstruo.species
+        descripcion.text = monstruo.description // Mostrar la descripción
+    }
+    
 }

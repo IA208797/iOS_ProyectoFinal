@@ -9,32 +9,35 @@ import UIKit
 
 extension ControladorPantallaPrincipalDeColeccion: UICollectionViewDelegateFlowLayout{
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        var ancho = self.collectionView.frame.width
-        var largo = self.collectionView.frame.height
+        // Ancho de la celda como la mitad del ancho de la colección
+        let ancho = collectionView.frame.width / 2
         
-        ancho = ancho / 1.5
-        largo = ancho * 0.8
+        // Altura proporcional al ancho de la celda
+        let largo = ancho * 2  // Esto da una proporción de 2:1
         
         return CGSize(width: ancho, height: largo)
     }
     
     // Modifica el inset de las vistas
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
+        // Un margen fijo de 10 puntos, pero puedes ajustarlo si lo necesitas
+        let margin = CGFloat(10)
         
-        let margin = CGFloat(25)
-    
         return UIEdgeInsets(top: margin, left: margin, bottom: margin, right: margin)
     }
-    
+
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
-        
-        return 5
+        return 20  // Espacio entre filas
     }
-    
+
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
-        var ancho = self.collectionView.frame.width
-        ancho = ancho / 3.5
-        
-        return ancho
+        // Establece el espacio entre las celdas de una fila
+        let numeroDeCeldasPorFila: CGFloat = 2  // O el número que prefieras
+        let espacioDisponible = collectionView.frame.width - (numeroDeCeldasPorFila * 10) // Considera el margen
+        let espaciado = espacioDisponible / (numeroDeCeldasPorFila + 1)
+        return espaciado
+
     }
+
 }
+
