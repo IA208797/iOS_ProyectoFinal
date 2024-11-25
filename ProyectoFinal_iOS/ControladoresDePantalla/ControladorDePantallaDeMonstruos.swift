@@ -27,6 +27,7 @@ class ControladorPantallaDelMonstruo: UIViewController{
         print("Caminante no hay camino")
         realizar_descarga_de_informacion()
     }
+    
     func realizar_descarga_de_informacion(){
         if self.monstruo == nil {
             print("Holi, amigo ¿Cómo te va?")

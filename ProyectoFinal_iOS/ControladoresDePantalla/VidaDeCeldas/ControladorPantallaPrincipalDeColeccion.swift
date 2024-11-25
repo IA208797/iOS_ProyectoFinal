@@ -12,9 +12,7 @@ import UIKit
 class ControladorPantallaPrincipalDeColeccion: UICollectionViewController{
     
     private var lista_de_monstruos: [Monstruo] = []
-    
     private let identificador_de_celda = "celda_pantalla_principal"
-    
     let proveedor_monstruos = ProveedorDeMonstruos.autoreferencia
     
     override func viewDidLoad(){
@@ -75,13 +73,10 @@ class ControladorPantallaPrincipalDeColeccion: UICollectionViewController{
         }
     }
     
-    
     func animateCellAppearance(cell: UICollectionViewCell) {
         cell.alpha = 0  // Comienza invisible
         UIView.animate(withDuration: 0.5, delay: 0.1, options: .curveEaseIn, animations: {
             cell.alpha = 1  // Hacerla visible con animación
         }, completion: nil)
     }
-    
-    
 }

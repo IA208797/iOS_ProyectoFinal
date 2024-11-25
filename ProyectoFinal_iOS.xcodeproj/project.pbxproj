@@ -23,6 +23,9 @@
 		FB303B732CEE43C600281779 /* ProveedorMonstruos.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB303B6C2CEE43C600281779 /* ProveedorMonstruos.swift */; };
 		FB303B762CEE49B700281779 /* mod_navegador_principal.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB303B752CEE49B700281779 /* mod_navegador_principal.swift */; };
 		FB6387FE2CEFA1EA0035A88B /* EstiloCellViewControllerCelular.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB6387FD2CEFA1EA0035A88B /* EstiloCellViewControllerCelular.swift */; };
+		FB9380692CF4FA0900D97618 /* ProveedorArmaduras.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB9380682CF4FA0900D97618 /* ProveedorArmaduras.swift */; };
+		FB93806B2CF4FEB200D97618 /* Armaduras.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB93806A2CF4FEB200D97618 /* Armaduras.swift */; };
+		FB93806D2CF5062A00D97618 /* ControladorDePantallaDeArmaduras.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB93806C2CF5062A00D97618 /* ControladorDePantallaDeArmaduras.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +66,9 @@
 		FB303B6C2CEE43C600281779 /* ProveedorMonstruos.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProveedorMonstruos.swift; sourceTree = "<group>"; };
 		FB303B752CEE49B700281779 /* mod_navegador_principal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mod_navegador_principal.swift; sourceTree = "<group>"; };
 		FB6387FD2CEFA1EA0035A88B /* EstiloCellViewControllerCelular.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EstiloCellViewControllerCelular.swift; sourceTree = "<group>"; };
+		FB9380682CF4FA0900D97618 /* ProveedorArmaduras.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProveedorArmaduras.swift; sourceTree = "<group>"; };
+		FB93806A2CF4FEB200D97618 /* Armaduras.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Armaduras.swift; sourceTree = "<group>"; };
+		FB93806C2CF5062A00D97618 /* ControladorDePantallaDeArmaduras.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControladorDePantallaDeArmaduras.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -159,6 +165,7 @@
 				FB303B742CEE49A500281779 /* estilos */,
 				FB303B672CEE43C600281779 /* VidaDeCeldas */,
 				FB303B682CEE43C600281779 /* ControladorDePantallaDeMonstruos.swift */,
+				FB93806C2CF5062A00D97618 /* ControladorDePantallaDeArmaduras.swift */,
 			);
 			path = ControladoresDePantalla;
 			sourceTree = "<group>";
@@ -167,6 +174,7 @@
 			isa = PBXGroup;
 			children = (
 				FB303B6A2CEE43C600281779 /* Monstruos.swift */,
+				FB93806A2CF4FEB200D97618 /* Armaduras.swift */,
 			);
 			path = Modelos;
 			sourceTree = "<group>";
@@ -175,6 +183,7 @@
 			isa = PBXGroup;
 			children = (
 				FB303B6C2CEE43C600281779 /* ProveedorMonstruos.swift */,
+				FB9380682CF4FA0900D97618 /* ProveedorArmaduras.swift */,
 			);
 			path = Proveedor;
 			sourceTree = "<group>";
@@ -319,7 +328,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FB9380692CF4FA0900D97618 /* ProveedorArmaduras.swift in Sources */,
+				FB93806D2CF5062A00D97618 /* ControladorDePantallaDeArmaduras.swift in Sources */,
 				FB303B732CEE43C600281779 /* ProveedorMonstruos.swift in Sources */,
+				FB93806B2CF4FEB200D97618 /* Armaduras.swift in Sources */,
 				FB18D3672CE26BDD00CAF627 /* ViewController.swift in Sources */,
 				FB18D3632CE26BDD00CAF627 /* AppDelegate.swift in Sources */,
 				FB18D3652CE26BDD00CAF627 /* SceneDelegate.swift in Sources */,
