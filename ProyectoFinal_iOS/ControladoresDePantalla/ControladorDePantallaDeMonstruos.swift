@@ -1,9 +1,6 @@
-//
 //  ControladorDePantallaDeMonstruos.swift
 //  ProyectoFinal_iOS
-//
 //  Created by alumno on 11/11/24.
-//
 
 import UIKit
 
@@ -27,11 +24,12 @@ class ControladorPantallaDelMonstruo: UIViewController{
         
         let controlador_de_navegacion = self.navigationController as? mod_navegador_principal
         controlador_de_navegacion?.activar_navigation_bar(activar: true)
-        
+        print("Caminante no hay camino")
         realizar_descarga_de_informacion()
     }
     func realizar_descarga_de_informacion(){
         if self.monstruo == nil {
+            print("Holi, amigo ¿Cómo te va?")
             proveedor_monstruos.obtener_monstruo(id: self.id_monstruo ?? -1, que_hacer_al_recibir: {
                 [weak self] (monstruo) in self?.monstruo = monstruo
                 DispatchQueue.main.async {
@@ -41,8 +39,8 @@ class ControladorPantallaDelMonstruo: UIViewController{
             })
         }
         else if self.monstruo == nil {
-            proveedor_monstruos.obtener_monstruo(id: id_monstruo ?? -1) { [weak self] monstruo in
-                self?.monstruo = monstruo
+            print("Aquí pasó algo")
+            proveedor_monstruos.obtener_monstruo(id: id_monstruo ?? -1) { [weak self] monstruo in self?.monstruo = monstruo
                 DispatchQueue.main.async {
                     self?.actualizar_interfaz()
                 }
@@ -57,11 +55,9 @@ class ControladorPantallaDelMonstruo: UIViewController{
         nombre.text = monstruo_actual.name
         tipo.text = monstruo_actual.type
         especie.text = monstruo_actual.species
-       // descripcion.text = monstruo_actual.description
-        
+        descripcion.text = monstruo_actual.description
     }
 
-    
     func dibujar_descripcion(){
         guard let descripcion_actual = self.monstruo else {
             return
@@ -69,14 +65,9 @@ class ControladorPantallaDelMonstruo: UIViewController{
         descripcion.text = descripcion_actual.description
     }
 
-
     func actualizar_interfaz() {
         guard let monstruo = self.monstruo else { return }
-        
         // Mostrar la información del monstruo en la interfaz
-        nombre.text = monstruo.name
-        tipo.text = monstruo.type
-        especie.text = monstruo.species
         descripcion.text = monstruo.description // Mostrar la descripción
     }
     

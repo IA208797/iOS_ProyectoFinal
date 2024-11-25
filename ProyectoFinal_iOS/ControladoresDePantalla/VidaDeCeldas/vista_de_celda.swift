@@ -12,14 +12,13 @@ class VistaDeZelda: UICollectionViewCell{
     @IBOutlet weak var nombre: UILabel!
     @IBOutlet weak var tipo: UILabel!
     @IBOutlet weak var especie: UILabel!
-    //IBOutlet weak var descripcion: UILabel!
+    
     
     override func awakeFromNib() {
             super.awakeFromNib()
             // Personaliza la celda aquí
             styleCell()
             addGradientBackground()
-        
         }
 
         private func styleCell() {
@@ -37,7 +36,7 @@ class VistaDeZelda: UICollectionViewCell{
     private func addGradientBackground() {
         let gradientLayer = CAGradientLayer()
         gradientLayer.frame = bounds  // Asegúrate de que el gradiente cubra toda la celda
-        gradientLayer.colors = [UIColor.red.cgColor, UIColor.orange.cgColor]
+        gradientLayer.colors = [UIColor.brown.cgColor, UIColor.systemOrange.cgColor]
         gradientLayer.startPoint = CGPoint(x: 0, y: 0)
         gradientLayer.endPoint = CGPoint(x: 1, y: 1)
         

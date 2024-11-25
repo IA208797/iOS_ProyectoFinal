@@ -10,10 +10,10 @@ import UIKit
 extension ControladorPantallaPrincipalDeColeccion: UICollectionViewDelegateFlowLayout{
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         // Ancho de la celda como la mitad del ancho de la colección
-        let ancho = collectionView.frame.width / 2
+        let ancho = collectionView.frame.width / 1.28
         
         // Altura proporcional al ancho de la celda
-        let largo = ancho * 2  // Esto da una proporción de 2:1
+        let largo = ancho / 3  // Esto da una proporción
         
         return CGSize(width: ancho, height: largo)
     }

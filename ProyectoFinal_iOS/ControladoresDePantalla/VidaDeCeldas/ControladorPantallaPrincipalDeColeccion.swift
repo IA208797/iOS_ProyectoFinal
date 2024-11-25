@@ -43,7 +43,7 @@ class ControladorPantallaPrincipalDeColeccion: UICollectionViewController{
         celda.nombre.text = self.lista_de_monstruos[indexPath.item].name
         celda.tipo.text = self.lista_de_monstruos[indexPath.item].type
         celda.especie.text = self.lista_de_monstruos[indexPath.item].species
-        //celda.descripcion.text = self.lista_de_monstruos[indexPath.item].description
+
         
         animateCellAppearance(cell: celda)
         
