@@ -4,7 +4,6 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -225,8 +224,9 @@
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionIndicatorImage="book" catalog="system" id="xcJ-nl-b0t">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <color key="selectedImageTintColor" red="0.46941446520000002" green="0.1994249897" blue="0.1204307768" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="backgroundColor" red="0.11764705882352941" green="0.11764705882352941" blue="0.17254901960784313" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="barTintColor" red="0.11764705882352941" green="0.11764705882352941" blue="0.17254901960784313" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="selectedImageTintColor" red="1" green="0.78431372549019607" blue="0.3411764705882353" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </tabBar>
                     <connections>
                         <segue destination="H1g-A5-CYe" kind="relationship" relationship="viewControllers" id="Imf-6p-mxe"/>
@@ -249,36 +249,77 @@
                         <color key="tintColor" red="0.77203677400000004" green="0.46661590260000002" blue="0.30056052" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="Ugk-Hc-hIn" kind="relationship" relationship="rootViewController" id="AND-Ny-Ye7"/>
+                        <segue destination="xuC-jV-BWv" kind="relationship" relationship="rootViewController" id="h1e-Aj-uOQ"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8Zb-4Z-XY1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-118" y="-834"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="igh-Fi-3Dp">
+        <!--Controlador Pantalla Principal De Armaduras-->
+        <scene sceneID="uIL-XP-nUb">
             <objects>
-                <viewController id="Ugk-Hc-hIn" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="LjV-1n-Th3">
+                <collectionViewController id="xuC-jV-BWv" customClass="ControladorPantallaPrincipalDeArmaduras" customModule="ProyectoFinal_iOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="UXo-2e-7bg">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="xAo-LZ-JWp"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="Am1-2t-QX1"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="c33-AG-N62" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                        <color key="backgroundColor" red="0.6588235294117647" green="0.90196078431372551" blue="0.81176470588235294" alpha="1" colorSpace="calibratedRGB"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="FRI-qe-6hY">
+                            <size key="itemSize" width="393" height="351"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <cells>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="celda_armadura" id="HtT-T4-TNF" customClass="VistaDeArmadura" customModule="ProyectoFinal_iOS" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="351"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="RXP-jA-y9I" customClass="VistaDeArmadura" customModule="ProyectoFinal_iOS" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="0.0" width="393" height="351"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nombre" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HCJ-ZX-caQ">
+                                            <rect key="frame" x="8" y="8" width="377" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="kS5-RP-HLt">
+                                            <rect key="frame" x="76" y="61" width="240" height="228"/>
+                                        </imageView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="HCJ-ZX-caQ" firstAttribute="top" secondItem="RXP-jA-y9I" secondAttribute="top" constant="8" id="2qz-2K-l5d"/>
+                                        <constraint firstItem="kS5-RP-HLt" firstAttribute="leading" secondItem="RXP-jA-y9I" secondAttribute="leading" constant="76" id="AMk-k3-1JE"/>
+                                        <constraint firstItem="HCJ-ZX-caQ" firstAttribute="leading" secondItem="RXP-jA-y9I" secondAttribute="leading" constant="8" id="CPK-WR-IXH"/>
+                                        <constraint firstItem="kS5-RP-HLt" firstAttribute="top" secondItem="RXP-jA-y9I" secondAttribute="top" constant="61" id="K85-JN-Sg4"/>
+                                        <constraint firstItem="HCJ-ZX-caQ" firstAttribute="centerX" secondItem="RXP-jA-y9I" secondAttribute="centerX" id="OVW-YE-sZM"/>
+                                        <constraint firstAttribute="trailing" secondItem="kS5-RP-HLt" secondAttribute="trailing" constant="77" id="Oab-aB-4D8"/>
+                                        <constraint firstAttribute="bottom" secondItem="kS5-RP-HLt" secondAttribute="bottom" constant="62" id="aWt-9i-4Cq"/>
+                                    </constraints>
+                                </collectionViewCellContentView>
+                                <size key="customSize" width="393" height="351"/>
+                                <connections>
+                                    <outlet property="imagen" destination="kS5-RP-HLt" id="aVf-ah-5fW"/>
+                                    <outlet property="nombre" destination="HCJ-ZX-caQ" id="uCF-Nj-mZo"/>
+                                </connections>
+                            </collectionViewCell>
+                        </cells>
+                        <connections>
+                            <outlet property="dataSource" destination="xuC-jV-BWv" id="XYb-DG-J2F"/>
+                            <outlet property="delegate" destination="xuC-jV-BWv" id="cXh-cc-bxg"/>
+                        </connections>
+                    </collectionView>
+                    <navigationItem key="navigationItem" id="7rm-EK-dyG"/>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SJF-Zn-Y5W" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="902" y="-835"/>
+            <point key="canvasLocation" x="901.52671755725191" y="-835.21126760563379"/>
         </scene>
     </scenes>
     <resources>
         <image name="book" catalog="system" width="128" height="99"/>
         <image name="lizard.fill" catalog="system" width="128" height="112"/>
         <image name="tshirt.fill" catalog="system" width="128" height="98"/>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
     </resources>
 </document>

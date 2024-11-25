@@ -30,7 +30,7 @@ class ProveedorDeArmaduras{
                     print(respuesta)
                 }
             }   catch {
-                print("Error - No se recibieron las armaduras")
+                print("Error - No se recibieron las armaduras: \(error) ")
             }
         }.resume()
     }

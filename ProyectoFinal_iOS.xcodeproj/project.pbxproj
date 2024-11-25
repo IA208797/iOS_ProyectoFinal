@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FB0AF53B2CF5397F004A6CEF /* UIColor+Hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB0AF53A2CF5397F004A6CEF /* UIColor+Hex.swift */; };
 		FB18D3632CE26BDD00CAF627 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB18D3622CE26BDD00CAF627 /* AppDelegate.swift */; };
 		FB18D3652CE26BDD00CAF627 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB18D3642CE26BDD00CAF627 /* SceneDelegate.swift */; };
 		FB18D3672CE26BDD00CAF627 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB18D3662CE26BDD00CAF627 /* ViewController.swift */; };
@@ -26,6 +27,8 @@
 		FB9380692CF4FA0900D97618 /* ProveedorArmaduras.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB9380682CF4FA0900D97618 /* ProveedorArmaduras.swift */; };
 		FB93806B2CF4FEB200D97618 /* Armaduras.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB93806A2CF4FEB200D97618 /* Armaduras.swift */; };
 		FB93806D2CF5062A00D97618 /* ControladorDePantallaDeArmaduras.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB93806C2CF5062A00D97618 /* ControladorDePantallaDeArmaduras.swift */; };
+		FBA59DCF2CF5112400F7154A /* ControladorPantallaPrincipalDeArmaduras.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBA59DCD2CF5112400F7154A /* ControladorPantallaPrincipalDeArmaduras.swift */; };
+		FBA59DD02CF5112400F7154A /* VistaDeArmadura.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBA59DCE2CF5112400F7154A /* VistaDeArmadura.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +49,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		FB0AF53A2CF5397F004A6CEF /* UIColor+Hex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Hex.swift"; sourceTree = "<group>"; };
 		FB18D35F2CE26BDD00CAF627 /* ProyectoFinal_iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProyectoFinal_iOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB18D3622CE26BDD00CAF627 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FB18D3642CE26BDD00CAF627 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -69,6 +73,8 @@
 		FB9380682CF4FA0900D97618 /* ProveedorArmaduras.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProveedorArmaduras.swift; sourceTree = "<group>"; };
 		FB93806A2CF4FEB200D97618 /* Armaduras.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Armaduras.swift; sourceTree = "<group>"; };
 		FB93806C2CF5062A00D97618 /* ControladorDePantallaDeArmaduras.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControladorDePantallaDeArmaduras.swift; sourceTree = "<group>"; };
+		FBA59DCD2CF5112400F7154A /* ControladorPantallaPrincipalDeArmaduras.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ControladorPantallaPrincipalDeArmaduras.swift; sourceTree = "<group>"; };
+		FBA59DCE2CF5112400F7154A /* VistaDeArmadura.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VistaDeArmadura.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -153,6 +159,8 @@
 		FB303B672CEE43C600281779 /* VidaDeCeldas */ = {
 			isa = PBXGroup;
 			children = (
+				FBA59DCD2CF5112400F7154A /* ControladorPantallaPrincipalDeArmaduras.swift */,
+				FBA59DCE2CF5112400F7154A /* VistaDeArmadura.swift */,
 				FB303B652CEE43C600281779 /* ControladorPantallaPrincipalDeColeccion.swift */,
 				FB303B662CEE43C600281779 /* vista_de_celda.swift */,
 			);
@@ -193,6 +201,7 @@
 			children = (
 				FB303B752CEE49B700281779 /* mod_navegador_principal.swift */,
 				FB6387FD2CEFA1EA0035A88B /* EstiloCellViewControllerCelular.swift */,
+				FB0AF53A2CF5397F004A6CEF /* UIColor+Hex.swift */,
 			);
 			path = estilos;
 			sourceTree = "<group>";
@@ -329,12 +338,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				FB9380692CF4FA0900D97618 /* ProveedorArmaduras.swift in Sources */,
+				FBA59DCF2CF5112400F7154A /* ControladorPantallaPrincipalDeArmaduras.swift in Sources */,
 				FB93806D2CF5062A00D97618 /* ControladorDePantallaDeArmaduras.swift in Sources */,
 				FB303B732CEE43C600281779 /* ProveedorMonstruos.swift in Sources */,
 				FB93806B2CF4FEB200D97618 /* Armaduras.swift in Sources */,
+				FBA59DD02CF5112400F7154A /* VistaDeArmadura.swift in Sources */,
 				FB18D3672CE26BDD00CAF627 /* ViewController.swift in Sources */,
 				FB18D3632CE26BDD00CAF627 /* AppDelegate.swift in Sources */,
 				FB18D3652CE26BDD00CAF627 /* SceneDelegate.swift in Sources */,
+				FB0AF53B2CF5397F004A6CEF /* UIColor+Hex.swift in Sources */,
 				FB303B6F2CEE43C600281779 /* ControladorPantallaPrincipalDeColeccion.swift in Sources */,
 				FB303B762CEE49B700281779 /* mod_navegador_principal.swift in Sources */,
 				FB303B722CEE43C600281779 /* Monstruos.swift in Sources */,

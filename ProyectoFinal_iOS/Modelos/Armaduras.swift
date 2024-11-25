@@ -8,10 +8,9 @@
 struct Armadura: Codable{
     var id: Int
     var name: String
-    var assets: Assets // Esto es lo que nos permite utilizar una lista miembro dentro de la API
+    var assets: Assets? // Esto es lo que nos permite utilizar una lista miembro dentro de la API
     
     struct Assets: Codable{
-        var imageMale: String
-        var imageFemale: String
+        var imageFemale: String?
     }
 }

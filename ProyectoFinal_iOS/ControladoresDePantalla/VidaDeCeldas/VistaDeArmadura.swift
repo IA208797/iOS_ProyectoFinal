@@ -8,38 +8,42 @@
 import UIKit
 
 class VistaDeArmadura: UICollectionViewCell {
-    let nombre = UILabel()
-    let tipo = UILabel()
+
     
-    override init(frame: CGRect) {
-        super.init(frame: frame)
-        configurarVista()
-    }
+    @IBOutlet weak var nombre: UILabel!
+    @IBOutlet weak var imagen: UIImageView!
     
-    required init?(coder: NSCoder) {
-        super.init(coder: coder)
-        configurarVista()
-    }
     
-    private func configurarVista() {
-        nombre.translatesAutoresizingMaskIntoConstraints = false
-        tipo.translatesAutoresizingMaskIntoConstraints = false
+    override func awakeFromNib() {
+            super.awakeFromNib()
+            // Personaliza la celda aquí
+            styleCell()
+            addGradientBackground()
+        }
+
+        private func styleCell() {
+            // Estilo general de la celda
+            self.layer.cornerRadius = 10
+            self.layer.masksToBounds = true
+            self.layer.shadowColor = UIColor.black.cgColor
+            self.layer.shadowOpacity = 0.2
+            self.layer.shadowOffset = CGSize(width: 2, height: 2)
+            self.layer.shadowRadius = 5
+        }
+    
+
+    // Función que agrega el gradiente a la celda
+    private func addGradientBackground() {
+        let gradientLayer = CAGradientLayer()
+        gradientLayer.frame = bounds
+        gradientLayer.colors = [
+            UIColor(hex: "#A8E6CF").cgColor,
+            UIColor(hex: "#34A853").cgColor
+        ]
+        gradientLayer.startPoint = CGPoint(x: 0, y: 0)
+        gradientLayer.endPoint = CGPoint(x: 1, y: 1)
         
-        addSubview(nombre)
-        addSubview(tipo)
-        
-        NSLayoutConstraint.activate([
-            nombre.topAnchor.constraint(equalTo: topAnchor, constant: 8),
-            nombre.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 8),
-            nombre.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -8),
-            
-            tipo.topAnchor.constraint(equalTo: nombre.bottomAnchor, constant: 8),
-            tipo.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 8),
-            tipo.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -8),
-        ])
-        
-        nombre.font = UIFont.boldSystemFont(ofSize: 16)
-        tipo.font = UIFont.systemFont(ofSize: 14)
-        tipo.textColor = .gray
+        // Agregar el gradiente como capa de fondo
+        layer.insertSublayer(gradientLayer, at: 0)
     }
 }

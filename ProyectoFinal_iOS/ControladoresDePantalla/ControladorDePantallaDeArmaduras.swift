@@ -11,7 +11,7 @@ class ControladorDePantallaDeArmaduras: UIViewController{
     
     let proveedor_de_armaduras = ProveedorDeArmaduras.autoreferencia
     
-    // Aquí van los outlel
+    // Aquí van los outlets
     @IBOutlet weak var nombre: UILabel!
     @IBOutlet weak var imagenArmadura: UIImageView!
     
@@ -61,7 +61,7 @@ class ControladorDePantallaDeArmaduras: UIViewController{
         nombre.text = armadura_actual.name
         
         // Cargamos la imagen desde la URL
-        cargar_imagen_desde_URL(urlString: armadura_actual.assets.imageMale)
+        cargar_imagen_desde_URL(urlString: armadura_actual.assets?.imageFemale ?? "Imagen No Disponible")
         
     }
     
