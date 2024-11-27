@@ -19,6 +19,15 @@ class ControladorPantallaPrincipalDeColeccion: UICollectionViewController{
         super.viewDidLoad()
         print("Hola")
         
+        let backgroundImagen = UIImage(named: "mhb4")
+        
+        let imageView = UIImageView(frame: self.view.bounds)
+        imageView.image = backgroundImagen
+        imageView.contentMode = .scaleAspectFill
+        imageView.clipsToBounds = true
+        
+        self.view.insertSubview(imageView, at: 0)
+        
         proveedor_monstruos.obtener_monstruos{
             [weak self] (monstruos) in self?.lista_de_monstruos = monstruos
             DispatchQueue.main.async {

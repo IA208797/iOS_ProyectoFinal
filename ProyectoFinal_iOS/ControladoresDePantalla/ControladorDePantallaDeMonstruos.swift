@@ -22,6 +22,15 @@ class ControladorPantallaDelMonstruo: UIViewController{
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        let backgroundImagen = UIImage(named: "mhb2")
+        
+        let imageView = UIImageView(frame: self.view.bounds)
+        imageView.image = backgroundImagen
+        imageView.contentMode = .scaleAspectFill
+        imageView.clipsToBounds = true
+        
+        self.view.insertSubview(imageView, at: 0)
+        
         let controlador_de_navegacion = self.navigationController as? mod_navegador_principal
         controlador_de_navegacion?.activar_navigation_bar(activar: true)
         print("Caminante no hay camino")

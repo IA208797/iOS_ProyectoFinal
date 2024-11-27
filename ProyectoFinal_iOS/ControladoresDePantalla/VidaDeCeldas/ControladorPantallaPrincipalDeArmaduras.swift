@@ -14,7 +14,18 @@ class ControladorPantallaPrincipalDeArmaduras: UICollectionViewController, UICol
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         cargarArmaduras()
+    
+        let backgroundImagen = UIImage(named: "mhb2")
+        
+        let imageView = UIImageView(frame: self.view.bounds)
+        imageView.image = backgroundImagen
+        imageView.contentMode = .scaleAspectFill
+        imageView.clipsToBounds = true
+        
+        self.view.insertSubview(imageView, at: 0)
+        
     }
     
     
@@ -39,7 +50,7 @@ class ControladorPantallaPrincipalDeArmaduras: UICollectionViewController, UICol
         let celda: VistaDeArmadura = collectionView.dequeueReusableCell(withReuseIdentifier: identificadorDeCelda, for: indexPath) as! VistaDeArmadura
         
         let armadura = self.listaDeArmaduras[indexPath.item]
-        celda.nombre.text = armadura.name
+        //celda.nombre.text = armadura.name
         
         celda.nombre.text = self.listaDeArmaduras[indexPath.item].name
 

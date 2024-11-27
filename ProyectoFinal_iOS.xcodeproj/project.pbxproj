@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		FB0AF53B2CF5397F004A6CEF /* UIColor+Hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB0AF53A2CF5397F004A6CEF /* UIColor+Hex.swift */; };
+		FB13C3292CF667E500B30835 /* Armas.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB13C3282CF667E500B30835 /* Armas.swift */; };
+		FB13C32B2CF66AC000B30835 /* ProveedorArmas.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB13C32A2CF66AC000B30835 /* ProveedorArmas.swift */; };
+		FB13C32D2CF66CFA00B30835 /* VistaDeArma.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB13C32C2CF66CFA00B30835 /* VistaDeArma.swift */; };
+		FB13C32F2CF66FD300B30835 /* ControladorPantallaPrincipalDeArmas.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB13C32E2CF66FD300B30835 /* ControladorPantallaPrincipalDeArmas.swift */; };
+		FB13C3312CF6747600B30835 /* ControladorDePantallaDeArmas.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB13C3302CF6747600B30835 /* ControladorDePantallaDeArmas.swift */; };
 		FB18D3632CE26BDD00CAF627 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB18D3622CE26BDD00CAF627 /* AppDelegate.swift */; };
 		FB18D3652CE26BDD00CAF627 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB18D3642CE26BDD00CAF627 /* SceneDelegate.swift */; };
 		FB18D3672CE26BDD00CAF627 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB18D3662CE26BDD00CAF627 /* ViewController.swift */; };
@@ -18,7 +23,7 @@
 		FB18D3842CE26BDE00CAF627 /* ProyectoFinal_iOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB18D3832CE26BDE00CAF627 /* ProyectoFinal_iOSUITests.swift */; };
 		FB18D3862CE26BDE00CAF627 /* ProyectoFinal_iOSUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB18D3852CE26BDE00CAF627 /* ProyectoFinal_iOSUITestsLaunchTests.swift */; };
 		FB303B6F2CEE43C600281779 /* ControladorPantallaPrincipalDeColeccion.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB303B652CEE43C600281779 /* ControladorPantallaPrincipalDeColeccion.swift */; };
-		FB303B702CEE43C600281779 /* vista_de_celda.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB303B662CEE43C600281779 /* vista_de_celda.swift */; };
+		FB303B702CEE43C600281779 /* VistaDeCelda.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB303B662CEE43C600281779 /* VistaDeCelda.swift */; };
 		FB303B712CEE43C600281779 /* ControladorDePantallaDeMonstruos.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB303B682CEE43C600281779 /* ControladorDePantallaDeMonstruos.swift */; };
 		FB303B722CEE43C600281779 /* Monstruos.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB303B6A2CEE43C600281779 /* Monstruos.swift */; };
 		FB303B732CEE43C600281779 /* ProveedorMonstruos.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB303B6C2CEE43C600281779 /* ProveedorMonstruos.swift */; };
@@ -50,6 +55,11 @@
 
 /* Begin PBXFileReference section */
 		FB0AF53A2CF5397F004A6CEF /* UIColor+Hex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Hex.swift"; sourceTree = "<group>"; };
+		FB13C3282CF667E500B30835 /* Armas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Armas.swift; sourceTree = "<group>"; };
+		FB13C32A2CF66AC000B30835 /* ProveedorArmas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProveedorArmas.swift; sourceTree = "<group>"; };
+		FB13C32C2CF66CFA00B30835 /* VistaDeArma.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VistaDeArma.swift; sourceTree = "<group>"; };
+		FB13C32E2CF66FD300B30835 /* ControladorPantallaPrincipalDeArmas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControladorPantallaPrincipalDeArmas.swift; sourceTree = "<group>"; };
+		FB13C3302CF6747600B30835 /* ControladorDePantallaDeArmas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControladorDePantallaDeArmas.swift; sourceTree = "<group>"; };
 		FB18D35F2CE26BDD00CAF627 /* ProyectoFinal_iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProyectoFinal_iOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB18D3622CE26BDD00CAF627 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FB18D3642CE26BDD00CAF627 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -64,7 +74,7 @@
 		FB18D3832CE26BDE00CAF627 /* ProyectoFinal_iOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProyectoFinal_iOSUITests.swift; sourceTree = "<group>"; };
 		FB18D3852CE26BDE00CAF627 /* ProyectoFinal_iOSUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProyectoFinal_iOSUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		FB303B652CEE43C600281779 /* ControladorPantallaPrincipalDeColeccion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ControladorPantallaPrincipalDeColeccion.swift; sourceTree = "<group>"; };
-		FB303B662CEE43C600281779 /* vista_de_celda.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = vista_de_celda.swift; sourceTree = "<group>"; };
+		FB303B662CEE43C600281779 /* VistaDeCelda.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VistaDeCelda.swift; sourceTree = "<group>"; };
 		FB303B682CEE43C600281779 /* ControladorDePantallaDeMonstruos.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ControladorDePantallaDeMonstruos.swift; sourceTree = "<group>"; };
 		FB303B6A2CEE43C600281779 /* Monstruos.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Monstruos.swift; sourceTree = "<group>"; };
 		FB303B6C2CEE43C600281779 /* ProveedorMonstruos.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProveedorMonstruos.swift; sourceTree = "<group>"; };
@@ -162,7 +172,9 @@
 				FBA59DCD2CF5112400F7154A /* ControladorPantallaPrincipalDeArmaduras.swift */,
 				FBA59DCE2CF5112400F7154A /* VistaDeArmadura.swift */,
 				FB303B652CEE43C600281779 /* ControladorPantallaPrincipalDeColeccion.swift */,
-				FB303B662CEE43C600281779 /* vista_de_celda.swift */,
+				FB303B662CEE43C600281779 /* VistaDeCelda.swift */,
+				FB13C32C2CF66CFA00B30835 /* VistaDeArma.swift */,
+				FB13C32E2CF66FD300B30835 /* ControladorPantallaPrincipalDeArmas.swift */,
 			);
 			path = VidaDeCeldas;
 			sourceTree = "<group>";
@@ -174,6 +186,7 @@
 				FB303B672CEE43C600281779 /* VidaDeCeldas */,
 				FB303B682CEE43C600281779 /* ControladorDePantallaDeMonstruos.swift */,
 				FB93806C2CF5062A00D97618 /* ControladorDePantallaDeArmaduras.swift */,
+				FB13C3302CF6747600B30835 /* ControladorDePantallaDeArmas.swift */,
 			);
 			path = ControladoresDePantalla;
 			sourceTree = "<group>";
@@ -183,6 +196,7 @@
 			children = (
 				FB303B6A2CEE43C600281779 /* Monstruos.swift */,
 				FB93806A2CF4FEB200D97618 /* Armaduras.swift */,
+				FB13C3282CF667E500B30835 /* Armas.swift */,
 			);
 			path = Modelos;
 			sourceTree = "<group>";
@@ -192,6 +206,7 @@
 			children = (
 				FB303B6C2CEE43C600281779 /* ProveedorMonstruos.swift */,
 				FB9380682CF4FA0900D97618 /* ProveedorArmaduras.swift */,
+				FB13C32A2CF66AC000B30835 /* ProveedorArmas.swift */,
 			);
 			path = Proveedor;
 			sourceTree = "<group>";
@@ -340,8 +355,13 @@
 				FB9380692CF4FA0900D97618 /* ProveedorArmaduras.swift in Sources */,
 				FBA59DCF2CF5112400F7154A /* ControladorPantallaPrincipalDeArmaduras.swift in Sources */,
 				FB93806D2CF5062A00D97618 /* ControladorDePantallaDeArmaduras.swift in Sources */,
+				FB13C32F2CF66FD300B30835 /* ControladorPantallaPrincipalDeArmas.swift in Sources */,
+				FB13C32B2CF66AC000B30835 /* ProveedorArmas.swift in Sources */,
 				FB303B732CEE43C600281779 /* ProveedorMonstruos.swift in Sources */,
+				FB13C3292CF667E500B30835 /* Armas.swift in Sources */,
+				FB13C32D2CF66CFA00B30835 /* VistaDeArma.swift in Sources */,
 				FB93806B2CF4FEB200D97618 /* Armaduras.swift in Sources */,
+				FB13C3312CF6747600B30835 /* ControladorDePantallaDeArmas.swift in Sources */,
 				FBA59DD02CF5112400F7154A /* VistaDeArmadura.swift in Sources */,
 				FB18D3672CE26BDD00CAF627 /* ViewController.swift in Sources */,
 				FB18D3632CE26BDD00CAF627 /* AppDelegate.swift in Sources */,
@@ -351,7 +371,7 @@
 				FB303B762CEE49B700281779 /* mod_navegador_principal.swift in Sources */,
 				FB303B722CEE43C600281779 /* Monstruos.swift in Sources */,
 				FB303B712CEE43C600281779 /* ControladorDePantallaDeMonstruos.swift in Sources */,
-				FB303B702CEE43C600281779 /* vista_de_celda.swift in Sources */,
+				FB303B702CEE43C600281779 /* VistaDeCelda.swift in Sources */,
 				FB6387FE2CEFA1EA0035A88B /* EstiloCellViewControllerCelular.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

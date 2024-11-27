@@ -27,6 +27,15 @@ class ControladorDePantallaDeArmaduras: UIViewController{
         // Si voy a cambiar el estilo, va aquí
         print("Ya vamos a descargar la información, bip bup bop")
         realizar_descarga_de_información()
+        
+        let backgroundImagen = UIImage(named: "mhb3")
+        
+        let imageView = UIImageView(frame: self.view.bounds)
+        imageView.image = backgroundImagen
+        imageView.contentMode = .scaleAspectFill
+        imageView.clipsToBounds = true
+        
+        self.view.insertSubview(imageView, at: 0)
     }
     
     func realizar_descarga_de_información(){
